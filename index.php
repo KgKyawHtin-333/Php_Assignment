@@ -1,6 +1,6 @@
 <?php 
     
-    echo "<h1> Your Bill <h1>"
+    
 
     $humburger = 4.95;
     $chocolate_milk = 1.95;
@@ -29,7 +29,63 @@
    $total_price=$pre_tax+$post_tax+$total;
    echo "Total Price : ".$total_price;
 
+   $subtotal_humburger = $humburger * 2;
 
+   
+   echo "<br><br><br>";
+   echo "<table border=1 cellpadding=10px>
+           <thead>
+              
+                <th> Name </th>
+                <th> Price </th>
+                <th> Quantity </th>
+                <th> Sub total </th>
+
+              
+           </thead>
+           <tbody>
+                <tr> 
+                  <td> Humburger </td>
+                  <td> $humburger </td>
+                  <td> 2 </td>
+                  <td> $subtotal_humburger </td>
+
+                  
+                </tr>
+                <tr>
+                   <td> Chocolate Milkshake </td>
+                   <td> $chocolate_milk </td>
+                   <td> 1 </td>
+                   <td> $chocolate_milk</td>
+                </tr>
+                <tr> 
+                   <td> Cola </td>
+                   <td> $cola </td>
+                   <td> 1 </td>
+                   <td> $cola </td>
+                 </tr>
+                 <tr>
+                    <td colspan=3> Pre Tax </td>
+                    <td> $pre_tax </td>
+                 </tr>
+                 < tr>
+                    <td colspan=3> Post Tax </td>
+                    <td> $post_tax </td>
+                  </tr>
+                  <tr>
+                     <td colspan=3> Total Price </td>
+                     <td> $total_price </td>
+                  </tr>
+             </tbody>
+
+
+
+      </table>"
+
+
+
+
+   ;
 
 
  ?>
