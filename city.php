@@ -71,18 +71,18 @@
   echo "<br><br><br>";
 
   $ordering = array(
-     "New York"    => "NY(8175133)",
-     "Los Angeles" => "CA(3792621)",
-     "Chicago"     => "IL(2695598)",
-     "Houston"     => "TX(2100263)",
-     "Philadelphia"=> "PA(1526006)",
-     "San Antonio" => "TX(1327407)",
-     "San Diego"   => "CA(1307402)",
-     "Dallas"      => "TX(1197816)",
-     "San Jose"    => "CA(945942)" 
+     "New York"    => 8175133,
+     "Los Angeles" => 3792621,
+     "Chicago"     => 2695598,
+     "Houston"     => 2100263,
+     "Philadelphia"=> 1526006,
+     "San Antonio" => 1327407,
+     "San Diego"   => 1307402,
+     "Dallas"      => 1197816,
+     "San Jose"    => 945942 
         );
   
-  asort($ordering);
+  arsort($ordering);
      
         echo " <table border=1 cellpadding=10px>   
                <thead>
@@ -104,16 +104,27 @@
   	            
   	    echo "</table>";
   	    echo "<br><br><br>";
+    $city = array( 
+    "New York"    => "NY(8175133)",
+     "Los Angeles" => "CA(3792621)",
+     "Chicago"     => "IL(2695598)",
+     "Houston"     => "TX(2100263)",
+     "Philadelphia"=> "PA(1526006)",
+     "San Antonio" => "TX(1327407)",
+     "San Diego"   => "CA(1307402)",
+     "Dallas"      => "TX(1197816)",
+     "San Jose"    => "CA(945942)"
 
+   );
 
-     ksort($ordering);
+     ksort($city);
        
        echo " <table border=1 cellpadding=10px>   
                <thead>
                   <th>City Name</th>
                   <th>Sort by City Name</th>
                  </thead>";
-  	 foreach ($ordering as $key => $value) {
+  	 foreach ($city as $key => $value) {
   	 	     echo "
                 
                 <tbody>
